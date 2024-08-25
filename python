@@ -1,0 +1,17 @@
+class Dog:
+    def __init__(self, name, age):
+        self.name = name  # Instance attribute
+        self.age = age
+
+    def bark(self):
+        return f"{self.name} says woof!"
+
+    def get_human_age(self):
+        return self.age * 7
+
+# Create an instance of Dog
+my_dog = Dog("Buddy", 4)
+
+# Call the methods
+print(my_dog.bark())  # Output: "Buddy says woof!"
+print(my_dog.get_human_age())  # Output: 28
